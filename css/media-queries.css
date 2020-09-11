@@ -122,6 +122,8 @@
 		background: #1f2024;
 		margin: 0 30px;
 		clear: both;
+        width: 50%;
+        float: right;
 	}
 	ul#nav li {
 		display: block;
@@ -134,7 +136,6 @@
 	}
 	ul#nav li a {
 		display: block;
-		margin: 0;
 		padding: 0;
 		margin: 12px 0;
 		line-height: 16px;

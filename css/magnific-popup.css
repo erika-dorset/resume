@@ -35,9 +35,6 @@
 	#about .contact-details {
 		width: 50%;
 	}
-	#about .download {
-		width: 50%;
-	}
 	/* Resume */
 	#resume h1 {
 		font: 16px/24px 'opensans-bold', sans-serif;
@@ -100,7 +97,7 @@
 		top: 60%;
 	}
 	/* toggle buttons */
-	#nav-wrap:not( :target)>a:first-of-type,
+	#nav-wrap:not(:target)>a:first-of-type,
 	#nav-wrap:target>a:last-of-type {
 		display: block;
 	}
