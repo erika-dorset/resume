@@ -84,7 +84,6 @@
 		font: 0/0 a;
 		text-shadow: none;
 		color: transparent;
-		position: relative;
 		top: 0px;
 		right: 30px;
 	}
@@ -438,7 +437,7 @@
 }
 
 .mfp-preloader a:hover {
-	color: #fff;
+	color: #f0f;
 }
 
 .mfp-s-ready .mfp-preloader {

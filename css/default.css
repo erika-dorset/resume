@@ -46,25 +46,6 @@ code, kbd, pre, samp {
    font-size: 1em;
 }
 
-pre {
-	white-space: pre;
-	white-space: pre-wrap;
-	word-wrap: break-word;
-}
-
-blockquote,
-q {
-	quotes: &#8220 &#8220;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-	content: '';
-	content: none;
-}
-
 ins {
 	background-color: #f0f;
 	color: #000;

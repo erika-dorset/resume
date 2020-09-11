@@ -1,5 +1,7 @@
 body {
 	background: #000;
+    user-select: none;
+    -moz-user-select: none;
 }
 
 header {
@@ -193,10 +195,9 @@ ul#nav li a:active {
 	background-color: transparent !important;
 }
 
-ul#nav li.current a {
+ul#nav li.current a{
 	color: #f0f;
 }
-
 
 /* About */
 #about {
@@ -1240,7 +1241,7 @@ ul#nav li.current a {
 
 
 /* Contact */
-#contact {
+#contact{
 	background: #111;
 	padding-top: 96px;
 	padding-bottom: 102px;
@@ -1250,6 +1251,8 @@ ul#nav li.current a {
 #contact .section-head {
 	margin-bottom: 42px;
 }
+
+/* #contact a:hover, #contact a:focus { color: #f0f !important; } */
 
 #contact h1 {
 	font: 18px/24px 'opensans-bold', sans-serif;
@@ -1272,6 +1275,10 @@ ul#nav li.current a {
 	text-align: left;
 	float: left;
 	color: #fff;
+}
+
+#contact h1:hover:before, #contact h1:hover{
+    color: #f0f;
 }
 
 #contact h4 {
@@ -1302,7 +1309,7 @@ footer {
 
 footer a,
 footer a:visited {
-	color: #525252;
+	color: #fff;
 }
 
 footer a:hover,

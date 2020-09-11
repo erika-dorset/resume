@@ -36,9 +36,7 @@
 	#about .contact-details {
 		width: 50%;
 	}
-	#about .download {
-		width: 50%;
-	}
+    
 	/* Resume */
 	#resume h1 {
 		font: 16px/24px 'opensans-bold', sans-serif;
@@ -144,6 +142,24 @@
 		border: none;
 	}
     /* Header Styles */
+    header{
+        
+        animation: fade-mobile 10s infinite linear alternate-reverse !important;
+    }
+
+    /* Animate fading background */
+    @keyframes fade-mobile {
+        0% {
+            background: #161415 url(../images/background-mobile.png) no-repeat top center;
+        }
+        50% {
+            background: #161415 url(../images/glitch-mobile.png) no-repeat top center;
+        }
+        100% {
+            background: #161415 url(../images/background-mobile.png) no-repeat top center;
+        }
+    }
+
 	header .banner {
 		padding-bottom: 12px;
 		padding-top: 6px;
@@ -173,14 +189,14 @@
 		display: none;
 	}
 	/* About */
-	#about .profile-pic {
-		display: none;
+	#about .profile-picture {
+		margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 48px;
 	}
-	#about .download .button {
-		width: 100%;
-		text-align: center;
-		padding: 15px 20px;
-	}
+	/* #about h2{
+        text-align: center;
+    } */
 	#about .main-col {
 		padding-right: 30px;
 	}
@@ -190,6 +206,11 @@
 		margin-bottom: 48px;
 		text-align: center;
 	}
+
+    #resume h1 span{
+        border: none;
+    }
+
 	#resume h1 {
 		letter-spacing: 3px;
 	}
@@ -238,6 +259,7 @@
 	/* Contact */
 	#contact {
 		padding-bottom: 66px;
+        text-align: center;
 	}
 	#contact .section-head {
 		margin-bottom: 12px;
@@ -250,7 +272,50 @@
 	}
 	#contact h1 span {
 		display: block;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+        white-space: nowrap;
+        animation: typewriter;
+        position: relative;
+        animation-duration: 12s;
+        animation-timing-function: steps(35, end);
+        animation-iteration-count: infinite;
+
 	}
+
+    /* Contact text animation */
+    /* Reference https://codepen.io/vasylenkoval/pen/JeoWdg */
+    /* The typing effect */
+        .text_1::after {
+        content: " | ";
+        font-size: 18px/24px 'opensans-bold', sans-serif;
+        color: #f0f;
+        position: absolute;
+        right: 0;
+        animation: cursor infinite;
+        animation-duration: 1s;
+        animation-timing-function: steps(1, end);
+        }
+
+        @keyframes typewriter {
+        0%, 100% {
+            width: 0;
+        }
+        20%, 80% {
+            width: 11em;
+        }
+        }
+
+        @keyframes cursor {
+        0%, 100% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        }
+
 	#contact .header-col {
 		padding-top: 0;
 	}
