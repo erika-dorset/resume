@@ -1,680 +1,1090 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="en">
 
 <head>
-	<meta charset="utf-8"/>
+	<meta charset="utf-8" />
 	<title>Erika Volodko</title>
-	<meta name="description" content="Web resume, Erika Volodko, Resume"/>
-	<meta name="author" content="Erika Volodko"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-	<link rel="stylesheet" href="css/default.css"/>
-	<link rel="stylesheet" href="css/layout.css"/>
-	<link rel="stylesheet" href="css/media-queries.css"/>
-	<link rel="stylesheet" href="css/magnific-popup.css"/>
-	<script src="js/modernizr.js"></script>
-	<link rel="shortcut icon" href="favicon.png"/>
+	<meta name="description" content="Web resume, Erika Volodko, Resume" />
+	<meta name="author" content="Erika Volodko" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!--Google Fonts-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet">
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+	<!--CSS-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css">
+
+	<!--Favicons-->
+	<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+	<!-- <link rel="manifest" href="favicons/site.webmanifest"> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--Animate CDN-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
-<body>
-	<header id="home">
-		<nav id="nav-wrap">
-			<a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-			<a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
-			<!--Navigation-->
-			<ul id="nav" class="nav">
-				<li class="current"><a class="smoothscroll" href="#home">Home</a></li>
-				<li><a class="smoothscroll" href="#about">About</a></li>
-				<li><a class="smoothscroll" href="#resume">Resume</a></li>
-				<li><a class="smoothscroll" href="#portfolio">Projects</a></li>
-				<li><a class="smoothscroll" href="#contact">Contact</a></li>
-			</ul>
+<body data-bs-spy="scroll" data-bs-target="#nav-wrap" data-bs-offset="80" class="scrollspy-example" tabindex="0">
+	<!--Main Container-->
+	<div class="container">
+		<!-- Navigation -->
+		<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="nav-wrap">
+			<div class="container-fluid">
+				<a class="navbar-brand"><img src="images/moon.png" class="change" /></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item" id="cyan">
+							<a class="nav-link" href="#home">HOME</a>
+						</li>
+						<li class="nav-item" id="magenta">
+							<a class="nav-link " href="#about">ABOUT</a>
+						</li>
+						<li class="nav-item" id="yellow">
+							<a class="nav-link " href="#resume">RESUME</a>
+						</li>
+						<li class="nav-item" id="black">
+							<a class="nav-link " href="#projects">PROJECTS</a>
+						</li>
+						<li class="nav-item" id="gray">
+							<a class="nav-link " href="#contact">CONTACT</a>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</nav>
-		<!--Header-->
-		<div class="row banner">
-			<div class="banner-text">
-				<h1 class="responsive-headline glitch-text" data-text="Erika Volodko">Erika Volodko</h1>
-				<h3>Dublin based <span>professional photographer</span>, <span>graphic designer</span> ,
-					<span>game developer</span> and
-					<span>web designer</span>.
-					Scroll <a class="smoothscroll" href="#about">Down</a>
-					to learn more <a class="smoothscroll" href="#about">about me</a>.
-				</h3>
-				<hr />
-				<ul class="social">
-					<li><a href="https://www.linkedin.com/in/erika-volodko/"
-							target="_blank"><i class="fa fa-linkedin"></i></a></li>
-					<li><a href="https://github.com/erika-dorset" target="_blank"><i class="fa fa-github"></i></a></li>
-					<li><a href="https://500px.com/p/erikavphotography" target="_blank"><i class="fa fa-camera"></i></a>
-					</li>
-				</ul>
+		<!-- Header Content -->
+		<header class="masthead py-5 container-fluid" id="home">
+			<div class="container-fluid h-100">
+				<div class="row h-100 align-items-center">
+					<div class="modal-body text-center">
+						<div class="container-fluid" id="headerDesign">
+							<div class="row">
+								<div class="col">
+									<div class="row moveContent">
+										<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+											<img src="images/profile.png" alt="Avatar" id="avatarImg" width="200"
+												height="200" class="img-fluid rounded-circle">
+											<div class="shape" id="dottedCircle"></div>
+
+										</div>
+										<div class="col-12 col-sm-6 col-md-2 col-lg-2">
+											<h1 id="textShadow" class="responsive-headline">Hi!</h1>
+										</div>
+										<div class="col-12 col-sm-12 col-md-6 col-lg-7">
+											<h2 class="display-4" id="nameStyle">My name is
+												<span class="display-4">ERIKA VOLODKO</span></h2>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- About -->
+		<section class="aboutMoveContent py-5 container-fluid " id="about">
+			<div class="container py-5">
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-12 col-lg-12">
+						<h1 id="titleShadowPink">About</h1>
+						<div class="hrLeft col-12 col-sm-4 col-md-4 col-lg-2"></div>
+					</div>
+				</div>
+				<div class="row py-3">
+					<div class="col-12 col-sm-12 col-md-12 col-lg-4">
+						<p>Computing educator with experience in teaching Front End and Back-End
+							<span class="highlight"> Web Development</span>
+							and <span class="highlight">UI/UX</span>
+							courses. Prepared bespoke lesson plans for students
+							identifed as requiring specialized teaching. Acted as an Academic Project Co-Ordinator
+							in the undergraduate project for Bsc in Computing at Dorset College.
+						</p>
+					</div>
+					<div class="col-12 col-sm-12 col-md-12 col-lg-5">
+						<p>Short-term contract-based <span class="highlight">quality assurance</span>
+							tester in a fast-paced startup at Viridian Software.
+							Results-oriented, achieving a discovery of functional bugs found
+							within the game's software. Contribution to the independent
+							<span class="highlight">game development</span>
+							community with self-developed games using Unity game engine.
+							I am an engaged, creative computer science professional seeking to leverage analytical
+							and coding skills with a creative twist and fresh perspective.
+						</p>
+					</div>
+					<div class="col-12 col-sm-12 col-md-12 col-lg-3">
+						<div id="dottedTriangle"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Resume -->
+		<section class="py-5 moveContent container-fluid" id="resume">
+			<div class="container py-5">
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-4 col-lg-4">
+						<h1 class="titleShadowYellow">Languages</h1>
+						<div class="hrLeft"></div>
+						<div class="row resumeText px-2 py-3">
+							<div class="col">
+								<h6>Russian</h6>
+							</div>
+							<div class="col">
+								<h6>Native</h6>
+							</div>
+							<hr class="dashedLine" />
+							<div class="w-100"></div>
+							<div class="col">
+								<h6>English</h6>
+							</div>
+							<div class="col">
+								<h6>Proficient</h6>
+							</div>
+							<hr class="dashedLine" />
+							<div class="w-100"></div>
+							<div class="col">
+								<h6>Lithuanian</h6>
+							</div>
+							<div class="col">
+								<h6>Conversational</h6>
+							</div>
+							<hr class="dashedLine" />
+							<div class="w-100"></div>
+							<div class="col">
+								<h6>German</h6>
+							</div>
+							<div class="col">
+								<h6>Learning</h6>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-12 col-md-4 col-lg-4">
+						<div class="container">
+							<div id="dottedRect"></div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-12 col-md-4 col-lg-4">
+						<h1 class="titleShadowYellow text-end">Education</h1>
+						<div class="hrRight"></div>
+						<div class="row resumeText px-2 py-4">
+							<div class="col-2">
+								<h6>2015</h6>
+							</div>
+							<div class="col">
+								<h6>Dún Laoghaire IADT</h6>
+							</div>
+							<div class="w-100"></div>
+							<div class="col-2">
+								<h6>2019</h6>
+							</div>
+							<div class="col lightText">
+								<p>Bachelor of Science (Honours) in Creative Computing<br />
+									<span>> Best Student of 2019</span><br />
+									<span>> GPA 3.67</span>
+								</p>
+							</div>
+							<div class="w-100"></div>
+							<div class="col-2">
+								<h6>2013</h6>
+							</div>
+							<div class="col">
+								<h6>University College Dublin</h6>
+							</div>
+							<div class="w-100"></div>
+							<div class="col-2">
+								<h6>2015</h6>
+							</div>
+							<div class="col lightText">
+								<p>Bachelor of Social Sciences</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--Careers-->
+		<section class="py-5 moveContent container-fluid ">
+			<div class="container">
+				<div class="row py-5">
+					<!--Careers Text-->
+					<div class="col-12 col-sm-12 col-md-2 col-lg-2">
+						<h1 class="rotate rotate-up">Careers</h1>
+					</div>
+					<div class="col-12 col-sm-12 col-md-10 col-lg-10 py-5">
+						<!--Line 1-->
+						<div class="row resumeText">
+							<div class="col-md-2 text-end">
+								<h6>Feb 2021</h6>
+								<div class="w-100"></div>
+								<h6>Jun 2021</h6>
+							</div>
+							<div class="col-md-8">
+								<h6>Game Quality Assurance Tester <span class="yellowText">@</span> Viridian
+									Software
+								</h6>
+								<p>Testing and reporting functional bugs found within the game
+									and providing detailed reproduction steps and descriptions
+									of bugs as well as regressing bugs fixed by other
+									developers using Jira. The job also consists of performing
+									Test Run Procedures using TestRail and completing corresponding
+									documentation.
+								</p>
+							</div>
+						</div>
+						<!--Line 2-->
+						<div class="row resumeText py-3">
+							<div class="col-md-2 text-end">
+								<h6>Oct 2019</h6>
+								<div class="w-100"></div>
+								<h6>Jun 2021</h6>
+							</div>
+							<div class="col-md-8">
+								<h6>Computing Educator <span class="yellowText">@</span> Dorset College Dublin</h6>
+								<p>Lecturing in Dorset College which primarily involves delivering
+									course-specific materials and assessments. This position requires
+									excellent timekeeping, good communication skills
+									as well as patience.
+								</p>
+							</div>
+						</div>
+						<!--Line 3-->
+						<div class="row resumeText py-3">
+							<div class="col-md-2 text-end">
+								<h6>April 2015</h6>
+								<div class="w-100"></div>
+								<h6>Sep 2015</h6>
+							</div>
+							<div class="col-md-8">
+								<h6>Russian Content Reviewer <span class="yellowText">@</span>
+									Arvato Financial Solutions
+								</h6>
+								<p>Management of internet content. Responsible for evaluating
+									online social media in conjunction with client policy
+									using internally developed applications to generate
+									quality reports.
+								</p>
+							</div>
+						</div>
+						<!--Line 4-->
+						<div class="row resumeText py-3">
+							<div class="col-md-2 text-end">
+								<h6>Jan 2012</h6>
+								<div class="w-100"></div>
+								<h6>Present</h6>
+							</div>
+							<div class="col-md-8">
+								<h6>Professional Photographer <span class="yellowText">@</span>
+									Erika V. Photography
+								</h6>
+								<p>Freelance professional photographer, skilled in portrait
+									photography, weddings, family, newborn, and event photography.
+									This position requires creativity, attention to detail,
+									patience, concentration, and strong networking skills.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--Skills and Tools-->
+		<section class="py-5 moveContent container-fluid " id="resume">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<h1 class="titleShadowYellow">Skills</h1>
+						<div class="hrLeft"></div>
+						<div class="row resumeText px-2 py-4">
+							<div class="col-4 col-sm-6">
+								<h6>React.js</h6>
+							</div>
+							<div class="col-8 col-sm-6">
+								<ul class="skillsDotsRight" id="React">
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</div>
+							<div class="w-100"></div>
+							<div class="col">
+								<h6>C# Unity</h6>
+							</div>
+							<div class="col-8 col-sm-6">
+								<ul class="skillsDotsRight" id="Unity">
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</div>
+							<div class="w-100"></div>
+							<div class="col-4 col-sm-6">
+								<h6>Illustrator</h6>
+							</div>
+							<div class="col-8 col-sm-6">
+								<ul class="skillsDotsRight" id="Illustrator">
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</div>
+							<div class="w-100"></div>
+							<div class="col-4 col-sm-6">
+								<h6>Bootstrap</h6>
+							</div>
+							<div class="col-8 col-sm-6">
+								<ul class="skillsDotsRight" id="Bootstrap">
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</div>
+							<div class="w-100"></div>
+							<div class="col-4 col-sm-6">
+								<h6>JavaScript</h6>
+							</div>
+							<div class="col-8 col-sm-6">
+								<ul class="skillsDotsRight" id="JavaScript">
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</div>
+							<div class="w-100"></div>
+							<div class="col-4 col-sm-6">
+								<h6>HTML & CSS</h6>
+							</div>
+							<div class="col-8 col-sm-6">
+								<ul class="skillsDotsRight" id="HTML">
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</div>
+							<div class="w-100"></div>
+							<div class="col-4 col-sm-6">
+								<h6>MongoDB & MySQL</h6>
+							</div>
+							<div class="col-8 col-sm-6">
+								<ul class="skillsDotsRight" id="Mongo">
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</div>
+							<div class="w-100"></div>
+							<div class="col-4 col-sm-6">
+								<h6>Photoshop & Lightroom</h6>
+							</div>
+							<div class="col-8 col-sm-6">
+								<ul class="skillsDotsRight" id="PS">
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="container">
+							<div id="dottedRect2"></div>
+						</div>
+					</div>
+					<!--TOOLS-->
+					<div class="col-md-4 text-end">
+						<h1 class="titleShadowYellow">Tools</h1>
+						<div class="hrRight"></div>
+						<div class="row resumeText px-2 py-4">
+							<div class="col-8 col-sm-6">
+								<ul class="skillsDotsLeft" id="Netbeans">
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</div>
+							<div class="col-4 col-sm-6">
+								<h6>Netbeans</h6>
+							</div>
+
+							<div class="w-100"></div>
+							<div class="col-8 col-sm-6">
+								<ul class="skillsDotsLeft" id="Axure">
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</div>
+							<div class="col">
+								<h6>Axure RP</h6>
+							</div>
+							<div class="w-100"></div>
+							<div class="col-8 col-sm-6">
+								<ul class="skillsDotsLeft" id="Figma">
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</div>
+							<div class="col-4 col-sm-6">
+								<h6>Figma</h6>
+							</div>
+							<div class="w-100"></div>
+							<div class="col-8 col-sm-6">
+								<ul class="skillsDotsLeft" id="Visual">
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</div>
+							<div class="col-4 col-sm-6">
+								<h6>Visual Studio</h6>
+							</div>
+
+							<div class="w-100"></div>
+							<div class="col-8 col-sm-6">
+								<ul class="skillsDotsLeft" id="Gitpod">
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</div>
+							<div class="col-4 col-sm-6">
+								<h6>Gitpod</h6>
+							</div>
+							<div class="w-100"></div>
+							<div class="col-8 col-sm-6">
+								<ul class="skillsDotsLeft" id="Jira">
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</div>
+							<div class="col-4 col-sm-6">
+								<h6>Jira</h6>
+							</div>
+							<div class="w-100"></div>
+							<div class="col-8 col-sm-6">
+								<ul class="skillsDotsLeft" id="MS">
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</div>
+							<div class="col-4 col-sm-6">
+								<h6>Microsoft Office</h6>
+							</div>
+							<div class="w-100"></div>
+							<div class="col-8 col-sm-6">
+								<ul class="skillsDotsLeft" id="Chrome">
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</div>
+							<div class="col-4 col-sm-6">
+								<h6>Chrome Dev Tools</h6>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="hrLeft longHr"></div>
+			</div>
+		</section>
+
+		<!--Projects-->
+		<section class="moveContent container-fluid" id="projects">
+			<div class="container">
+				<div class="col-12 col-sm-12 col-md-12 col-lg-3">
+					<h1 class="rotate2 rotate-down">Projects . . .</h1>
+				</div>
+				<div class="row" id="gallery" data-bs-toggle="modal" data-bs-target="#Modal">
+					<div class="col-12 col-sm-6 col-lg-3">
+						<div class="gallery-item" data-bs-target="#carouselExample" data-bs-slide-to="0">
+							<img class="w-100" src="images/portfolio/gameproject.png">
+							<div class="overlay">
+								<div class="portfolio-item-meta">
+									<h5>The Wanderer</h5>
+									<p>WebGL Unity game</p>
+									<div class="link-icon"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-3">
+						<div class="gallery-item" data-bs-target="#carouselExample" data-bs-slide-to="1">
+							<img class="w-100" src="images/portfolio/yihsin.png">
+							<div class="overlay">
+								<div class="portfolio-item-meta">
+									<h5>YI HSIN Design</h5>
+									<p>Clothing brand collaboration</p>
+									<div class="link-icon"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-3">
+						<div class="gallery-item" data-bs-target="#carouselExample" data-bs-slide-to="2">
+							<img class="w-100" src="images/portfolio/dorsetwebsite.png">
+							<div class="overlay">
+								<div class="portfolio-item-meta">
+									<h5>Dorset College</h5>
+									<p>Web Design</p>
+									<div class="link-icon"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="w-100 d-none d-lg-block"></div>
+					<div class="col-12 col-sm-6 col-lg-3 ">
+						<div class="gallery-item" data-bs-target="#carouselExample" data-bs-slide-to="3">
+							<img class="w-100" src="images/portfolio/whennightcomes.png">
+							<div class="overlay">
+								<div class="portfolio-item-meta">
+									<h5>When Night Comes</h5>
+									<p>Unity Game Project</p>
+									<div class="link-icon"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-3 ">
+						<div class="gallery-item" data-bs-target="#carouselExample" data-bs-slide-to="4">
+							<img class="w-100" src="images/portfolio/conventions.png">
+							<div class="overlay">
+								<div class="portfolio-item-meta">
+									<h5>Conventions</h5>
+									<p>Official Photographer</p>
+									<div class="link-icon"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-3 ">
+						<div class="gallery-item" data-bs-target="#carouselExample" data-bs-slide-to="5">
+							<img class="w-100" src="images/portfolio/tylersquest.png">
+							<div class="overlay">
+								<div class="portfolio-item-meta">
+									<h5>Tyler's Quest</h5>
+									<p>Phaser Game</p>
+									<div class="link-icon"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="w-100 d-none d-lg-block"></div>
+					<div class="col-12 col-sm-6 col-lg-3 ">
+						<div class="gallery-item" data-bs-target="#carouselExample" data-bs-slide-to="6">
+							<img class="w-100" src="images/portfolio/levelconcept.png">
+							<div class="overlay">
+								<div class="portfolio-item-meta">
+									<h5>Digital Art</h5>
+									<p>Level Concepts</p>
+									<div class="link-icon"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-3 ">
+						<div class="gallery-item" data-bs-target="#carouselExample" data-bs-slide-to="7">
+							<img class="w-100" src="images/portfolio/eventphotography.png">
+							<div class="overlay">
+								<div class="portfolio-item-meta">
+									<h5>Events</h5>
+									<p>Photography</p>
+									<div class="link-icon"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-3 ">
+						<div class="gallery-item" data-bs-target="#carouselExample" data-bs-slide-to="8">
+							<img class="w-100" src="images/portfolio/tedesque.png">
+							<div class="overlay">
+								<div class="portfolio-item-meta">
+									<h5>TEDesque UCD</h5>
+									<p>Public Speaking</p>
+									<div class="link-icon"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="w-100 d-none d-lg-block"></div>
+					<div class="col-12 col-sm-6 col-lg-3 ">
+						<div class="gallery-item" data-bs-target="#carouselExample" data-bs-slide-to="9">
+							<img class="w-100" src="images/portfolio/fashion.png">
+							<div class="overlay">
+								<div class="portfolio-item-meta">
+									<h5>Fashion and Editorial</h5>
+									<p>Photography</p>
+									<div class="link-icon"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-3 ">
+						<div class="gallery-item" data-bs-target="#carouselExample" data-bs-slide-to="10">
+							<img class="w-100" src="images/portfolio/sprout.png">
+							<div class="overlay">
+								<div class="portfolio-item-meta">
+									<h5>Sprout</h5>
+									<p>Food Photography</p>
+									<div class="link-icon"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-3">
+						<div class="gallery-item" data-bs-target="#carouselExample" data-bs-slide-to="11">
+							<img class="w-100" src="images/portfolio/thedescent.png">
+							<div class="overlay">
+								<div class="portfolio-item-meta">
+									<h5>The Descent</h5>
+									<p>Unity Game</p>
+									<div class="link-icon"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<!--Modal-->
+				<div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-body">
+								<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+
+									<div class="carousel-inner">
+										<div class="carousel-item active">
+											<img class="d-block w-100" src="images/portfolio/modals/modal1.png"
+												alt="First slide">
+											<div class="modal-footer">
+												<div class="modal-dialog modal-dialog-scrollable">
+													<h4>The Wanderer</h4>
+													<p>Currently working on a small WebGL project which will be
+														published on
+														an independent game
+														distributor platform.
+														The project is low poly and all of the level design is done
+														by
+														placing each object manually.
+														Developed in Unity using C# and
+														the AI uses Behavior Trees to animate and move across the
+														level.
+													</p>
+												</div>
+											</div>
+											<div class="link-box">
+												<a href="https://www.youtube.com/watch?v=eQXx3U5iQ7Q&t=1s&ab_channel=Megacaw"
+													target="_blank">Details</a>
+												<a type="button" class="btn" data-bs-dismiss="modal">Close</a>
+											</div>
+										</div>
+										<div class="carousel-item">
+											<img class="d-block w-100" src="images/portfolio/modals/modal2.png"
+												alt="Second slide">
+											<div class="modal-footer">
+												<div class="modal-dialog modal-dialog-scrollable">
+													<h4>YI HSIN Design</h4>
+													<p>Collaboration with YI HSIN Design in Griffith College. Images
+														displayed in CLOTH shop in Dublin.
+												</div>
+											</div>
+											<div class="link-box">
+												<a href="https://www.facebook.com/yihsindesign"
+													target="_blank">Details</a>
+												<a type="button" class="btn" data-bs-dismiss="modal">Close</a>
+											</div>
+										</div>
+										<div class="carousel-item">
+											<img class="d-block w-100" src="images/portfolio/modals/modal3.png"
+												alt="Third slide">
+											<div class="modal-footer">
+												<div class="modal-dialog modal-dialog-scrollable">
+													<h4>Dorset College</h4>
+													<p>Collaboration with Dorset College in re-designing and
+														updating their
+														official website.</p>
+												</div>
+											</div>
+											<div class="link-box">
+												<a href="https://dorset.ie/" target="_blank">Details</a>
+												<a type="button" class="btn" data-bs-dismiss="modal">Close</a>
+											</div>
+										</div>
+										<div class="carousel-item">
+											<img class="d-block w-100" src="images/portfolio/modals/modal4.png"
+												alt="Fourth slide">
+											<div class="modal-footer">
+												<div class="modal-dialog modal-dialog-scrollable">
+													<h4>When Night Comes</h4>
+													<p>As a final year undergraduate project, I developed When Night
+														Comes
+														which is an
+														original concept game created using
+														the Unity Game engine. The game investigates four different
+														Artificial
+														Intelligence scripting techniques including Machine
+														Learning,
+														Finite State Machine, Behaviour Tree and the NavMesh
+														component
+														provided by the Unity game engine.
+													</p>
+												</div>
+											</div>
+											<div class="link-box">
+												<a href="https://megacaw.itch.io/when-night-comes"
+													target="_blank">Details</a>
+												<a type="button" class="btn" data-bs-dismiss="modal">Close</a>
+											</div>
+										</div>
+										<div class="carousel-item">
+											<img class="d-block w-100" src="images/portfolio/modals/modal5.png"
+												alt="Fifth slide">
+											<div class="modal-footer">
+												<div class="modal-dialog modal-dialog-scrollable">
+													<h4>Conventions</h4>
+													<p>Collaboration with various conventions involving JCON,
+														Arcadecon and
+														Eirtakon based in Dublin.
+													</p>
+												</div>
+											</div>
+											<div class="link-box">
+												<a type="button" class="btn" data-bs-dismiss="modal">Close</a>
+											</div>
+										</div>
+										<div class="carousel-item">
+											<img class="d-block w-100" src="images/portfolio/modals/modal6.png"
+												alt="Sixth slide">
+											<div class="modal-footer">
+												<div class="modal-dialog modal-dialog-scrollable">
+													<h4>Tyler's Quest</h4>
+													<p>Small browser game developed with Phaser 2D game framework.
+														Development written in Javascript.
+														Phaser uses both a Canvas and WebGL renderer internally and
+														can
+														automatically swap between them
+														based on browser support.
+													</p>
+												</div>
+											</div>
+											<div class="link-box">
+												<a href="https://megacaw.itch.io/tylers-quest"
+													target="_blank">Details</a>
+												<a type="button" class="btn" data-bs-dismiss="modal">Close</a>
+											</div>
+										</div>
+										<div class="carousel-item">
+											<img class="d-block w-100" src="images/portfolio/modals/modal7.png"
+												alt="Seventh slide">
+											<div class="modal-footer">
+												<div class="modal-dialog modal-dialog-scrollable">
+													<h4>Digital Art</h4>
+													<p>I work on various design projects which involve designing
+														landscapes,
+														levels and in general
+														illustrations all of which are
+														designed in Adobe Photoshop and Adobe Illustrator. I am also
+														certified as an Adobe Associate for Graphic Design with
+														Illustrator.
+													</p>
+												</div>
+											</div>
+											<div class="link-box">
+												<a type="button" class="btn" data-bs-dismiss="modal">Close</a>
+											</div>
+										</div>
+										<div class="carousel-item">
+											<img class="d-block w-100" src="images/portfolio/modals/modal8.png"
+												alt="Eighth slide">
+											<div class="modal-footer">
+												<div class="modal-dialog modal-dialog-scrollable">
+													<h4>Events</h4>
+													<p>As an independent photography owned business, I have worked
+														at
+														various events. The images
+														included are from Experience Japan festival which
+														happens every year in Dublin. I had the opportinity of
+														meeting
+														Ireland's political figures and
+														capturing the overall experience. I've worked with
+														UCD societies, fashion shows, group sessions, school talent
+														shows
+														and other individual events.
+													</p>
+												</div>
+											</div>
+											<div class="link-box">
+												<a href="http://experiencejapan.ie/" target="_blank">Details</a>
+												<a type="button" class="btn" data-bs-dismiss="modal">Close</a>
+											</div>
+										</div>
+										<div class="carousel-item">
+											<img class="d-block w-100" src="images/portfolio/modals/modal9.png"
+												alt="First slide">
+											<div class="modal-footer">
+												<div class="modal-dialog modal-dialog-scrollable">
+													<h4>TEDesque</h4>
+													<p>I've had the opportinity working with TEDesque event where I
+														was
+														involved in public speaking
+														and photograhing the overall event.
+													</p>
+												</div>
+											</div>
+											<div class="link-box">
+												<a type="button" class="btn" data-bs-dismiss="modal">Close</a>
+											</div>
+										</div>
+										<div class="carousel-item">
+											<img class="d-block w-100" src="images/portfolio/modals/modal10.png"
+												alt="Second slide">
+											<div class="modal-footer">
+												<div class="modal-dialog modal-dialog-scrollable">
+													<h4>Fashion and Editorial</h4>
+													<p>Collaboration with various models, stylists, clothing brands
+														and
+														makeup artists on a various
+														set of projects involving
+														fashion, editorial and studio work.
+													</p>
+												</div>
+											</div>
+											<div class="link-box">
+												<a href="https://500px.com/p/erikavphotography"
+													target="_blank">Details</a>
+												<a type="button" class="btn" data-bs-dismiss="modal">Close</a>
+											</div>
+										</div>
+										<div class="carousel-item">
+											<img class="d-block w-100" src="images/portfolio/modals/modal11.png"
+												alt="Third slide">
+											<div class="modal-footer">
+												<div class="modal-dialog modal-dialog-scrollable">
+													<h4>Food Photography</h4>
+													<p>I've worked on some food related photography projects. One of
+														my
+														favourites was taking photos
+														of an Irish company called Sprout
+														which promotes healthy food and living.
+													</p>
+												</div>
+											</div>
+											<div class="link-box">
+												<a href="https://www.sproutfoodco.com/" target="_blank">Details</a>
+												<a type="button" class="btn" data-bs-dismiss="modal">Close</a>
+											</div>
+										</div>
+										<div class="carousel-item">
+											<img class="d-block w-100" src="images/portfolio/modals/modal12.png"
+												alt="Third slide">
+											<div class="modal-footer">
+												<div class="modal-dialog modal-dialog-scrollable">
+													<h4>The Descent</h4>
+													<p>I worked on the The Descent alongside another programmer
+														Mindaugas
+														Navickas for my third year
+														undergraduate project. It is a narrative driven,
+														interactive game.
+														The game was developed using the JavaScript and C# scripting
+														language inside the Unity
+														games-engine. The 3D environment and models were built
+														sourced from
+														different in-engine
+														assets or were
+														custom-made in Adobe Photoshop.
+													</p>
+												</div>
+											</div>
+											<div class="link-box">
+												<a href="http://gradshow.iadt.ie/student/N00152627.html"
+													target="_blank">Details</a>
+												<a type="button" class="btn" data-bs-dismiss="modal">Close</a>
+											</div>
+										</div>
+									</div>
+									<a class="carousel-control-prev" href="#carouselExample" type="button"
+										data-bs-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="visually-hidden">Previous</span>
+									</a>
+									<a class="carousel-control-next" href="#carouselExample" type="button"
+										data-bs-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="visually-hidden">Next</span>
+									</a>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="hrRight longHr"></div>
+		</section>
+
+		<!--Shapes-->
+		<section class="moveContent container-fluid">
+			<div class="container">
+				<div class="row d-flex justify-content-center">
+					<div class="col-3">
+						<div class="circle"></div>
+					</div>
+					<div class="col-3">
+						<div class="triangle"></div>
+					</div>
+					<div class="col-3">
+						<div class="rectangle"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<footer id="contact">
+		<div class="py-2 container-fluid ">
+			<div class="container">
+				<div class="row contactText">
+					<div class="col-12 col-sm-12 col-md-6 col-lg-3">
+						<h6>You got all the way down here!</h6>
+						<p>If you like my work make sure to click the button on the right. I am always happy to respond
+							and
+							talk to new people.</p>
+					</div>
+					<div class="col-5 col-sm-5 col-md-3 col-lg-2" id="clickyHand">
+						<a href="mailto:erikavolodko.contact@gmail.com"><img src="images/handwave.png" alt="Hand Wave"
+								id="handwave" width="100" height="100"
+								class="img-fluid center-block d-block mx-auto changeHand"></a>
+						<h6 id="clicky">Hm...can you click this?</h6>
+					</div>
+					<div class="col-10 col-sm-12 col-md-1 col-lg-1" id="hrDashedVertical">
+
+					</div>
+					<div class="col-7 col-sm-7 col-md-6 col-lg-3" id="contactDetails">
+						<h6>Contact Details</h6>
+						<p>erikavolodko.<wbr>contact@gmail.com</p>
+					</div>
+					<div class="col-6 col-sm-6 col-md-5 col-lg-3" id="adobeImg">
+						<a href="https://www.credly.com/badges/2fd0ceb3-9bc2-4e8f-911e-4a78b85169f3/linked_in"><img
+								src="images/adobe.png" alt="Adobe Certified" height="250"
+								class="img-fluid changeAdobe" target="_blank"></a>
+					</div>
+				</div>
 			</div>
 		</div>
-		<p class="scrolldown">
-			<a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
-		</p>
-	</header>
-	<!-- About-->
-	<section id="about">
-		<div class="row">
-			<div class="three columns">
-				<div class="profile-picture"></div>
-			</div>
-			<div class="nine columns main-col">
-				<h2>About</h2>
-				<p> I'm currently teaching on the BSc in Computer Science and User Interface (UI) / User Experience (UX)
-					Design programmes at Dorset College.
-					I teach and supervise learners studying topics including programming, front-ent web development and
-					UI/UX design. As an Academic Project
-					Co-ordinator, I ensure that the Research Methods module is organised and delivered accordingly. My
-					duties involve employing and allocating
-					project specific supervisors, delivering appropriate materials and overall organisation of the final
-					year project module.
-					<br/><br/>
-                  Additionally I work independently on various projects involved in photography, indie game development, UI/UX design and web development.
-               </p>
-			</div>
-		</div>
-	</section>
-	<!-- Resume -->
-	<section id="resume">
-		<!-- Education -->
-		<div class="row education">
-			<div class="three columns header-col">
-				<h1><span>Education</span></h1>
-			</div>
-			<div class="nine columns main-col">
-				<div class="row item">
-					<div class="twelve columns">
-						<h3>Dún Laoghaire Institute of Art, Design and Technology</h3>
-						<p class="info">Creative Computing<span>&bull;</span>
-							<em class="date">Bachelors Honours Degree</em>
-						</p>
-						<p>
-							Creative Computing is a practical computing programme with an
-							emphasis on developing the creative, technical and professional skills required
-							to work in a multi-disciplinary software design and development team.
-						</p>
+		<div class="container-fluid" id="socials">
+			<div class="container">
+				<div class="row">
+					<br /><br />
+					<div class="col-12 col-sm-12 col-md-6 col-lg-6 centerContact">
+						<a href="https://github.com/erika-dorset" target="_blank" class="btn-social btn-github"><i
+								class="fa fa-github-alt"></i></a>
+
+						<a href="https://www.linkedin.com/in/erika-volodko/" target="_blank"
+							class="btn-social btn-linkedin"><i class="fa fa-linkedin"></i></a>
+						<a href="https://500px.com/p/erikavphotography" target="_blank" class="btn-social btn-500px"><i
+								class="fa fa-500px"></i></a>
+					</div>
+					<div class="col-12 col-sm-12 col-md-6 col-lg-6 text-end centerContact" id="copyright">
+						Copyright &copy;
+						<script type="text/javascript">
+							document.write("Erika Volodko " + new Date().getFullYear());
+						</script>
+
 					</div>
 				</div>
-				<!-- item end -->
-				<div class="row item">
-					<div class="twelve columns">
-						<h3>University College Dublin</h3>
-						<p class="info">Social Science <span>&bull;</span>
-							<em class="date">Bachelors Honours Degree</em>
-						</p>
-						<p>
-							People-focused studies that covers a broad range of topics including social
-							issues that face the world. Modules covered including psychology, information
-							studies, social work, crime, social justice, social policy and economics.
-						</p>
-					</div>
-				</div>
-				<!-- item end -->
-			</div>
-		</div>
-		<!-- Careers -->
-		<div class="row work">
-			<div class="three columns header-col">
-				<h1><span>Careers</span></h1>
-			</div>
-			<div class="nine columns main-col">
-				<div class="row item">
-					<div class="twelve columns">
-						<h3>Dorset College</h3>
-						<p class="info">Educator and Academic Project Co-ordinator<span>&bull;</span>
-							<em class="date">October 2019 - Present</em>
-						</p>
-						<p>
-							Lecturing in Dorset College which primarily involves delivering course specific materials
-							and assessments.
-							This position requires time keeping, good communication skills as well as patience.
-						</p>
-					</div>
-				</div>
-				<!-- item end -->
-				<div class="row item">
-					<div class="twelve columns">
-						<h3>Erika V. Photography</h3>
-						<p class="info">Professional Photographer <span>&bull;</span>
-							<em class="date">2012 - Present</em>
-						</p>
-						<p>
-							Professional photographer with industry knowledge in fashion, product, event and family
-							photography. Long term experience involving modelling
-							which has allowed to pose my clients and organize large collaborations. Extensive knowledge
-							in portrait photography and a keen interest in
-							unique concepts such as Japanese cosplay has allowed me to build a wide-reaching genre of
-							work.
-						</p>
-					</div>
-				</div>
-				<!-- item end -->
-				<div class="row item">
-					<div class="twelve columns">
-						<h3>Arvato Financial Solutions, Global F&A</h3>
-						<p class="info">Content Moderator<span>&bull;</span> <em class="date">2015 - 2016</em>
-						</p>
-						<p>
-							As a Content Moderator my work involved day to day management of Internet content, ensuring
-							a quality experience is provided to millions of internet users.
-							Working with clients social media, advertising products. Optimal quality and productivity
-							levels through data analysis.
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Abilities -->
-		<div class="row skill">
-			<div class="three columns header-col">
-				<h1><span>Abilities</span></h1>
-			</div>
-			<div class="nine columns main-col">
-				<h4>Don’t limit yourself, discover new areas of expertise.<br/>
-					<em class="date">Sunday Adelaja</em>
-				</h4>
-				<br/>
-				<!-- Skill bars -->
-				<div class="bars">
-					<!--First column-->
-					<ul class="skills">
-						<div class="six columns">
-							<li><span class="bar-expand unity"></span><em>C# - Unity</em></li>
-							<li><span class="bar-expand html"></span><em>HTML(5)</em></li>
-							<li><span class="bar-expand css"></span><em>CSS(3)</em></li>
-							<li><span class="bar-expand javascript"></span><em>Javascript</em></li>
-							<li><span class="bar-expand react"></span><em>React</em></li>
-							<li><span class="bar-expand bootstrap"></span><em>Bootstrap framework</em></li>
-						</div>
-						<div class="six columns">
-							<li><span class="bar-expand java"></span><em>Java</em></li>
-							<li><span class="bar-expand mysql"></span><em>MySQL</em></li>
-							<li><span class="bar-expand android"></span><em>Android Studio</em></li>
-							<li><span class="bar-expand tableau"></span><em>Tableau</em></li>
-							<li><span class="bar-expand r"></span><em>R</em></li>
-							<li><span class="bar-expand python"></span><em>Python</em></li>
-						</div>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="row skill">
-			<div class="three columns header-col">
-				<!--Second column-->
-				<h1><span>Tools</span></h1>
-			</div>
-			<div class="nine columns main-col">
-				<div class="bars">
-					<ul class="tools">
-						<div class="six columns">
-							<li><span class="bar-expand msoffice"></span><em>MS Office</em></li>
-							<li><span class="bar-expand photoshop"></span><em>Photoshop</em></li>
-							<li><span class="bar-expand lightroom"></span><em>Lightroom</em></li>
-							<li><span class="bar-expand tiled"></span><em>Tiled</em></li>
-							<li><span class="bar-expand phaser"></span><em>Phaser</em></li>
-							<li><span class="bar-expand processing"></span><em>Processing</em></li>
-						</div>
-						<div class="six columns">
-							<li><span class="bar-expand axure"></span><em>Axure</em></li>
-							<li><span class="bar-expand figma"></span><em>Figma</em></li>
-							<li><span class="bar-expand chrome"></span><em>Chrome</em></li>
-							<li><span class="bar-expand netbeans"></span><em>Netbeans</em></li>
-							<li><span class="bar-expand gitpod"></span><em>Gitpod</em></li>
-							<li><span class="bar-expand atom"></span><em>Atom</em></li>
-						</div>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--Portfolio-->
-	<section id="portfolio">
-		<div class="row">
-			<div class="twelve columns collapsed">
-				<h1>Some of my Projects</h1>
-				<!-- portfolio-wrapper -->
-				<div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
-					<div class="columns portfolio-item">
-						<div class="item-wrap">
-							<a href="#modal-01" title="">
-								<img alt="" src="images/portfolio/gameproject.png"/>
-								<div class="overlay">
-									<div class="portfolio-item-meta">
-										<h5>The Wanderer</h5>
-										<p>WebGL Unity game</p>
-									</div>
-								</div>
-								<div class="link-icon"><i class="icon-plus"></i></div>
-							</a>
-						</div>
-					</div>
-					<!-- item end -->
-					<div class="columns portfolio-item">
-						<div class="item-wrap">
-							<a href="#modal-02" title="">
-								<img alt="" src="images/portfolio/yihsin.png"/>
-								<div class="overlay">
-									<div class="portfolio-item-meta">
-										<h5>YI HSIN Design</h5>
-										<p>Clothing brand collaboration</p>
-									</div>
-								</div>
-								<div class="link-icon"><i class="icon-plus"></i></div>
-							</a>
-						</div>
-					</div>
-					<!-- item end -->
-					<div class="columns portfolio-item">
-						<div class="item-wrap">
-							<a href="#modal-03" title="">
-								<img alt="" src="images/portfolio/dorsetwebsite.png"/>
-								<div class="overlay">
-									<div class="portfolio-item-meta">
-										<h5>Dorset College</h5>
-										<p>Web Design</p>
-									</div>
-								</div>
-								<div class="link-icon"><i class="icon-plus"></i></div>
-							</a>
-						</div>
-					</div>
-					<!-- item end -->
-					<div class="columns portfolio-item">
-						<div class="item-wrap">
-							<a href="#modal-04" title="">
-								<img alt="" src="images/portfolio/whennightcomes.png"/>
-								<div class="overlay">
-									<div class="portfolio-item-meta">
-										<h5>When Night Comes</h5>
-										<p>Unity Game Project</p>
-									</div>
-								</div>
-								<div class="link-icon"><i class="icon-plus"></i></div>
-							</a>
-						</div>
-					</div>
-					<!-- item end -->
-					<div class="columns portfolio-item">
-						<div class="item-wrap">
-							<a href="#modal-05" title="">
-								<img alt="" src="images/portfolio/conventions.png"/>
-								<div class="overlay">
-									<div class="portfolio-item-meta">
-										<h5>Conventions</h5>
-										<p>Official Photographer</p>
-									</div>
-								</div>
-								<div class="link-icon"><i class="icon-plus"></i></div>
-							</a>
-						</div>
-					</div>
-					<!-- item end -->
-					<div class="columns portfolio-item">
-						<div class="item-wrap">
-							<a href="#modal-06" title="">
-								<img alt="" src="images/portfolio/tylersquest.png"/>
-								<div class="overlay">
-									<div class="portfolio-item-meta">
-										<h5>Tyler's Quest</h5>
-										<p>Phaser Game</p>
-									</div>
-								</div>
-								<div class="link-icon"><i class="icon-plus"></i></div>
-							</a>
-						</div>
-					</div>
-					<!-- item end -->
-					<div class="columns portfolio-item">
-						<div class="item-wrap">
-							<a href="#modal-07" title="">
-								<img alt="" src="images/portfolio/levelconcept.png"/>
-								<div class="overlay">
-									<div class="portfolio-item-meta">
-										<h5>Digital Art</h5>
-										<p>Level Concepts</p>
-									</div>
-								</div>
-								<div class="link-icon"><i class="icon-plus"></i></div>
-							</a>
-						</div>
-					</div>
-					<!-- item end -->
-					<div class="columns portfolio-item">
-						<div class="item-wrap">
-							<a href="#modal-08" title="">
-								<img alt="" src="images/portfolio/eventphotography.png"/>
-								<div class="overlay">
-									<div class="portfolio-item-meta">
-										<h5>Events</h5>
-										<p>Photography</p>
-									</div>
-								</div>
-								<div class="link-icon"><i class="icon-plus"></i></div>
-							</a>
-						</div>
-					</div>
-					<!-- item end -->
-					<div class="columns portfolio-item">
-						<div class="item-wrap">
-							<a href="#modal-09" title="">
-								<img alt="" src="images/portfolio/tedesque.png"/>
-								<div class="overlay">
-									<div class="portfolio-item-meta">
-										<h5>TEDesque UCD</h5>
-										<p>Public Speaking</p>
-									</div>
-								</div>
-								<div class="link-icon"><i class="icon-plus"></i></div>
-							</a>
-						</div>
-					</div>
-					<!-- item end -->
-					<div class="columns portfolio-item">
-						<div class="item-wrap">
-							<a href="#modal-10" title="">
-								<img alt="" src="images/portfolio/fashion.png"/>
-								<div class="overlay">
-									<div class="portfolio-item-meta">
-										<h5>Fashion and Editorial</h5>
-										<p>Photography</p>
-									</div>
-								</div>
-								<div class="link-icon"><i class="icon-plus"></i></div>
-							</a>
-						</div>
-					</div>
-					<!-- item end -->
-					<div class="columns portfolio-item">
-						<div class="item-wrap">
-							<a href="#modal-11" title="">
-								<img alt="" src="images/portfolio/sprout.png"/>
-								<div class="overlay">
-									<div class="portfolio-item-meta">
-										<h5>Sprout</h5>
-										<p>Food Photography</p>
-									</div>
-								</div>
-								<div class="link-icon"><i class="icon-plus"></i></div>
-							</a>
-						</div>
-					</div>
-					<!-- item end -->
-					<div class="columns portfolio-item">
-						<div class="item-wrap">
-							<a href="#modal-12" title="">
-								<img alt="" src="images/portfolio/thedescent.png"/>
-								<div class="overlay">
-									<div class="portfolio-item-meta">
-										<h5>The Descent</h5>
-										<p>Unity Game</p>
-									</div>
-								</div>
-								<div class="link-icon"><i class="icon-plus"></i></div>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- Modal Pop up -->
-			<div id="modal-01" class="popup-modal mfp-hide">
-				<img class="scale-with-grid" src="images/portfolio/modals/modal1.png" alt="" />
-				<div class="description-box">
-					<h4>The Wanderer</h4>
-					<p>Currently working on a small WebGL project which will be published on an independent game
-						distributor platform.
-						The project is low poly and all of the level design is done by placing each object manually.
-						Developed in Unity using C# and
-						the AI uses Behavior Trees to animate and move across the level.
-					</p>
-					<span class="categories"><i class="fa fa-tag"></i>Game Development, Game Design, Level Design</span>
-				</div>
-				<div class="link-box">
-					<a href="https://www.youtube.com/watch?v=eQXx3U5iQ7Q&t=1s&ab_channel=Megacaw" target="_blank">Details</a>
-					<a class="popup-modal-dismiss">Close</a>
-				</div>
-			</div>
-			<!-- modal-01 End -->
-			<div id="modal-02" class="popup-modal mfp-hide">
-				<img class="scale-with-grid" src="images/portfolio/modals/modal2.png" alt="" />
-				<div class="description-box">
-					<h4>YI HSIN Design</h4>
-					<p>Collaboration with YI HSIN Design in Griffith College. Images displayed in CLOTH shop in Dublin.
-					</p>
-					<span class="categories"><i class="fa fa-tag"></i>Photography, Fashion</span>
-				</div>
-				<div class="link-box">
-					<a href="https://www.facebook.com/yihsindesign" target="_blank">Details</a>
-					<a class="popup-modal-dismiss">Close</a>
-				</div>
-			</div>
-			<!-- modal-02 End -->
-			<div id="modal-03" class="popup-modal mfp-hide">
-				<img class="scale-with-grid" src="images/portfolio/modals/modal3.png" alt="" />
-				<div class="description-box">
-					<h4>Dorset College</h4>
-					<p>Collaboration with Dorset College in re-designing and updating their official website.</p>
-					<span class="categories"><i class="fa fa-tag"></i>Web Design, Branding, UI/UX</span>
-				</div>
-				<div class="link-box">
-					<a href="https://dorset.ie/" target="_blank">Details</a>
-					<a class="popup-modal-dismiss">Close</a>
-				</div>
-			</div>
-			<!-- modal-03 End -->
-			<div id="modal-04" class="popup-modal mfp-hide">
-				<img class="scale-with-grid" src="images/portfolio/modals/modal4.png" alt="" />
-				<div class="description-box">
-					<h4>When Night Comes</h4>
-					<p>As a final year undergraduate project, I developed When Night Comes which is an
-						original concept game created using
-						the Unity Game engine. The game investigates four different Artificial
-						Intelligence scripting techniques including Machine Learning,
-						Finite State Machine, Behaviour Tree and the NavMesh component
-						provided by the Unity game engine.
-					</p>
-					<span class="categories"><i class="fa fa-tag"></i>Game Development, Machine Learning, AI</span>
-				</div>
-				<div class="link-box">
-					<a href="https://megacaw.itch.io/when-night-comes" target="_blank">Details</a>
-					<a class="popup-modal-dismiss">Close</a>
-				</div>
-			</div>
-			<!-- modal-04 End -->
-			<div id="modal-05" class="popup-modal mfp-hide">
-				<img class="scale-with-grid" src="images/portfolio/modals/modal5.png" alt="" />
-				<div class="description-box">
-					<h4>Conventions</h4>
-					<p>Collaboration with various conventions involving JCON, Arcadecon and Eirtakon based in Dublin.
-					</p>
-					<span class="categories"><i class="fa fa-tag"></i>Photography, Conventions, Events</span>
-				</div>
-				<div class="link-box">
-					<a class="popup-modal-dismiss">Close</a>
-				</div>
-			</div>
-			<!-- modal-05 End -->
-			<div id="modal-06" class="popup-modal mfp-hide">
-				<img class="scale-with-grid" src="images/portfolio/modals/modal6.png" alt="" />
-				<div class="description-box">
-					<h4>Tyler's Quest</h4>
-					<p>Small browser game developed with Phaser 2D game framework. Development written in Javascript.
-						Phaser uses both a Canvas and WebGL renderer internally and can automatically swap between them
-						based on browser support.
-					</p>
-					<span class="categories"><i class="fa fa-tag"></i>Game Development, Javascript</span>
-				</div>
-				<div class="link-box">
-					<a href="https://megacaw.itch.io/tylers-quest" target="_blank">Details</a>
-					<a class="popup-modal-dismiss">Close</a>
-				</div>
-			</div>
-			<!-- modal-06 End -->
-			<div id="modal-07" class="popup-modal mfp-hide">
-				<img class="scale-with-grid" src="images/portfolio/modals/modal7.png" alt="" />
-				<div class="description-box">
-					<h4>Digital Art</h4>
-					<p>I work on various design projects which involve designing landscapes, levels and in general
-						illustrations all of which are
-						designed in Photoshop.
-					</p>
-					<span class="categories"><i class="fa fa-tag"></i>Illustration, Art, Photoshop</span>
-				</div>
-				<div class="link-box">
-					<a class="popup-modal-dismiss">Close</a>
-				</div>
-			</div>
-			<!-- modal-07 End -->
-			<div id="modal-08" class="popup-modal mfp-hide">
-				<img class="scale-with-grid" src="images/portfolio/modals/modal8.png" alt="" />
-				<div class="description-box">
-					<h4>Events</h4>
-					<p>As an independent photography owned business, I have worked at various events. The images
-						included are from Experience Japan festival which
-						happens every year in Dublin. I had the opportinity of meeting Ireland's political figures and
-						capturing the overall experience. I've worked with
-						UCD societies, fashion shows, group sessions, school talent shows and other individual events.
-					</p>
-					<span class="categories"><i class="fa fa-tag"></i>Events, Photography</span>
-				</div>
-				<div class="link-box">
-					<a href="http://experiencejapan.ie/" target="_blank">Details</a>
-					<a class="popup-modal-dismiss">Close</a>
-				</div>
-				<div id="modal-09" class="popup-modal mfp-hide">
-					<img class="scale-with-grid" src="images/portfolio/modals/modal9.png" alt="" />
-					<div class="description-box">
-						<h4>TEDesque</h4>
-						<p>I've had the opportinity working with TEDesque event where I was involved in public speaking
-							and photograhing the overall event.
-						</p>
-						<span class="categories"><i class="fa fa-tag"></i>Public Speaking, Events</span>
-					</div>
-					<div class="link-box">
-						<a class="popup-modal-dismiss">Close</a>
-					</div>
-				</div>
-				<!-- modal-10 End -->
-				<div id="modal-10" class="popup-modal mfp-hide">
-					<img class="scale-with-grid" src="images/portfolio/modals/modal10.png" alt="" />
-					<div class="description-box">
-						<h4>Fashion and Editorial</h4>
-						<p>Collaboration with various models, stylists, clothing brands and makeup artists on a various
-							set of projects involving
-							fashion, editorial and studio work.
-						</p>
-						<span class="categories"><i class="fa fa-tag"></i>Fashion, Photography</span>
-					</div>
-					<div class="link-box">
-						<a href="https://500px.com/p/erikavphotography" target="_blank">Details</a>
-						<a class="popup-modal-dismiss">Close</a>
-					</div>
-				</div>
-				<!-- modal-11 End -->
-				<div id="modal-11" class="popup-modal mfp-hide">
-					<img class="scale-with-grid" src="images/portfolio/modals/modal11.png" alt="" />
-					<div class="description-box">
-						<h4>Food Photography</h4>
-						<p>I've worked on some food related photography projects. One of my favourites was taking photos
-							of an Irish company called Sprout
-							which promotes healthy food and living.
-						</p>
-						<span class="categories"><i class="fa fa-tag"></i>Food, Photography</span>
-					</div>
-					<div class="link-box">
-						<a href="https://www.sproutfoodco.com/" target="_blank">Details</a>
-						<a class="popup-modal-dismiss">Close</a>
-					</div>
-				</div>
-				<!-- modal-12 End -->
-				<div id="modal-12" class="popup-modal mfp-hide">
-					<img class="scale-with-grid" src="images/portfolio/modals/modal12.png" alt="" />
-					<div class="description-box">
-						<h4>The Descent</h4>
-						<p>I worked on the The Descent alongside another programmer Mindaugas Navickas for my third year
-							undergraduate project. It is a narrative driven,
-							interactive game.
-							The game was developed using the JavaScript and C# scripting language inside the Unity
-							games-engine. The 3D environment and models were built sourced from different in-engine
-							assets or were
-							custom-made in Adobe Photoshop.
-						</p>
-						<span class="categories"><i class="fa fa-tag"></i>Game Development, Unity</span>
-					</div>
-					<div class="link-box">
-						<a class="popup-modal-dismiss">Close</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Quote -->
-	<section id="call-to-action">
-		<div class="row">
-			<div class="two columns header-col">
-				<h1><span>Wise man once said...</span></h1>
-			</div>
-			<div class="eight columns">
-				<h3><span class="quote">You can’t connect the dots looking forward; you can only connect them looking backwards.</span>
-				</h3>
-				<p><span class="lead">Steve Jobs</span></p>
-			</div>
-			<div class="two columns">
-			</div>
-		</div>
-	</section>
-	<!-- Contact -->
-	<section id="contact">
-		<div class="row section-head">
-			<div class="five columns">
-				<p class="lead">Get in touch with me for any inquiries. I am always happy to respond and talk to new
-					people.
-					You can use my email or contact me on any of the social links below.
-				</p>
-			</div>
-			<div class="columns five contact-details">
-				<h2>Contact Details</h2>
-				<p class="address">
-					<span>erikavphotography@yahoo.ie</span><br>
-					<span>erikavolodko.contact@gmail.com</span><br>
-               </p>
-			</div>
-			<div class="two columns header-col">
-				<a href="mailto:erikavphotography@yahoo.ie"><h1><span class="text_1">Get In Touch.</span></h1></a>
-			</div>
-		</div>
-	</section>
-	<!-- Footer -->
-	<footer>
-		<div class="row">
-			<div class="twelve columns">
-				<ul class="social-links">
-					<li><a href="https://www.linkedin.com/in/erika-volodko/"
-							target="_blank"><i class="fa fa-linkedin"></i></a></li>
-					<li><a href="https://github.com/erika-dorset" target="_blank"><i class="fa fa-github"></i></a></li>
-					<li><a href="https://500px.com/p/erikavphotography" target="_blank"><i class="fa fa-camera"></i></a></li>
-				</ul>
-				<ul class="copyright">
-					<li>&copy; Copyright Erika Volodko</li>
-					<script type="text/javascript">
-						document.write(new Date().getFullYear());
-					</script>
-				</ul>
-			</div>
-			<div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a>
 			</div>
 		</div>
 	</footer>
-	<!--JavaScript-->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script>
-		window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>');
-	</script>
-	<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+	<!--Bootstrap CDN Bundle-->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+	<!--JQuery CDN-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!--Scripts-->
 	<script src="js/init.js"></script>
-	<script src="js/waypoints.js"></script>
-	<script src="js/jquery.fittext.js"></script>
-	<script src="js/magnific-popup.js"></script>
+	<script src="js/darkmode.js"></script>
 </body>
 
 </html>
