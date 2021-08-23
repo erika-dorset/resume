@@ -33,10 +33,12 @@ jQuery(document).ready(function ($) {
    var offset = 80;
 
    $('.navbar li a').click(function(event) {
-       $($(this).attr('href'))[0].scrollIntoView();
+       $($(this).attr('data-bs-target'))[0].scrollIntoView();
        scrollBy(5, -offset);
-       console.log(offset);
+      //  console.log(offset);
    });
+
+  
 });
 
 

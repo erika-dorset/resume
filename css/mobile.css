@@ -38,6 +38,14 @@
         display: block;
     }
 
+    #projectsText{
+        order: 1;
+    }
+
+    #galleryOrder{
+        order: 2;
+    }
+
     .text-end > h6{
         text-align: left;
     }
@@ -103,6 +111,15 @@
     .masthead {
         height: 0vh;
     }
+
+    #projectsText{
+        order: 1;
+    }
+
+    #galleryOrder{
+        order: 2;
+    }
+
     /* Shapes */
     #dottedCircle{
         height: 12em;
@@ -162,3 +179,13 @@
       height: 18vw;
     }
   }
+
+  
+
+/* Large devices */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .rotate2{
+        top: 23%;
+        right: 15%;
+    }
+}
