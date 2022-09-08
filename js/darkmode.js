@@ -3,6 +3,7 @@ $( ".change" ).on("click", function() {
         $( "body" ).removeClass( "dark" );
         $( "nav" ).removeClass( "dark" );
         /* Text */
+        $( "#portfolio-link" ).removeClass( "darkPortfolioLink" );
         $( ".nav-link" ).removeClass( "darkNav" );
         $( "#textShadow" ).removeClass( "darkHeading1" );
         $( "#titleShadowPink" ).removeClass( "darkHeading2" );
@@ -22,6 +23,7 @@ $( ".change" ).on("click", function() {
         $( "body" ).addClass( "dark" );
         $( "nav" ).addClass( "dark" );
         /* Text */
+        $( "#portfolio-link" ).addClass( "darkPortfolioLink" );
         $( ".nav-link" ).addClass( "darkNav" );
         $( "#textShadow" ).addClass( "darkHeading1" );
         $( "#titleShadowPink" ).addClass( "darkHeading2" );
