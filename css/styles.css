@@ -271,8 +271,13 @@ a {
 }
 
 a:hover {
-  color: var(--bs-link-hover-color);
+  color: var(--bs-link-hover-color) !important;
 }
+
+.active {
+  color: var(--bs-link-hover-color) !important;
+}
+
 
 a:not([href]):not([class]),
 a:not([href]):not([class]):hover {
@@ -4125,8 +4130,8 @@ fieldset:disabled .btn {
 .nav {
   --bs-nav-link-padding-x: 1rem;
   --bs-nav-link-padding-y: 0.5rem;
-  --bs-nav-link-font-weight: ;
-  --bs-nav-link-color: var(--bs-link-color);
+  --bs-nav-link-font-weight: 1rem;
+  --bs-nav-link-color: var(--bs-link-color) !important;
   --bs-nav-link-hover-color: var(--bs-link-hover-color);
   --bs-nav-link-disabled-color: #6c757d;
   display: flex;
@@ -4139,7 +4144,7 @@ fieldset:disabled .btn {
 .nav-link {
   display: block;
   padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
-  font-size: var(--bs-nav-link-font-size);
+  font-size: 1.2rem;
   font-weight: var(--bs-nav-link-font-weight);
   color: var(--bs-nav-link-color);
   text-decoration: none;
@@ -4357,14 +4362,28 @@ fieldset:disabled .btn {
 }
 
 .navbar-toggler {
-  padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+  padding: 10px;
   font-size: var(--bs-navbar-toggler-font-size);
   line-height: 1;
-  color: var(--bs-navbar-color);
-  background-color: transparent;
-  border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
-  border-radius: var(--bs-navbar-toggler-border-radius);
+  color: #fff;
+  background-color: var(--bs-primary);
+  border: none !important;
+  border-radius: 10%;
   transition: var(--bs-navbar-toggler-transition);
+}
+
+.navbar-toggler[aria-expanded="true"] {
+  .navbar-toggler-icon {
+  background-image: url("../assets/xmark-solid.svg") !important;
+  }
+}
+
+.navbar-toggler-icon {
+  background-image: url("../assets/bars-solid.svg") !important;
+}
+
+.navbar-toggler[aria-expanded="true"]{
+  background-color: #FB7DA0;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -13804,4 +13823,22 @@ a#portfolio-link:hover {
   width: 100%;
   height: 100% !important;
   object-fit: cover;
+}
+
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+
+:root {
+  --card-height: 65vh;
+  --card-width: calc(var(--card-height) / 1.5);
+}
+
+.card-bg {
+   background-image: url("../assets/shape.svg");
+   background-position: right bottom;
+   background-repeat: no-repeat;
+   background-size: 20%;
 }
